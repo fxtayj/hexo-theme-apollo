@@ -1,21 +1,14 @@
 menu:
-    Blog: /
-    Archive: /archives/
-    Weibo: http://weibo.com/sunchongsheng
-    GitHub: https://github.com/pinggod
-    Rss: /atom.xml
+    兑吧资讯: /
+    关于: /about/
 
-favicon: /favicon.png
-logo: /favicon.png
+favicon: http://yun.duiba.com.cn/logo.png
+logo: http://yun.duiba.com.cn/logo.png
 
 # Comment
 # e.g disqus: seansun
 disqus:
 duoshuo:
-
-# Analytics
-# google-analytics:
-ga: UA-65933410-1
 
 # Copyright Infomation
 startyear: 2015

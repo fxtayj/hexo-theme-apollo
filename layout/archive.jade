@@ -1,12 +1,9 @@
 extends partial/layout
 
 block container
-    include mixins/post
-    +postList()
+    include partial/duibaabout
 
 block pagination
-    include mixins/paginator
-    +home()
 
-block copyright
-    include partial/copyright
+block duibafooter
+    include partial/duibafooter

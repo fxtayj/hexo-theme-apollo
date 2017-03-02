@@ -1,0 +1,8 @@
+.tabBox.clearfix(style={width:'100%'})
+    - var act = page.current_url === "archives/";
+    a(href="/")
+        div(class={active: !act}) 公司动态
+            i
+    a(href="/archives")
+        div(class={active: act}) 公司简介
+            i

@@ -2,7 +2,8 @@ mixin postInfo(item)
     .post-info
         != full_date(item.date, 'll')
         if item.from && (is_home() || is_post())
-            a.post-from(href=item.from target="_blank" title=item.from) 翻译 · 原文地址
+            span 来源：
+                a.post-from(href=item.from target="_blank" title=item.from) #{item.fromtitle}
 
 //- Index Page
 mixin posts()
@@ -16,7 +17,7 @@ mixin posts()
                     +postInfo(item)
                     .post-content
                         != item.excerpt
-                    a.read-more(href= url_for(item.path))!= __('more')
+                    a.read-more(href= url_for(item.path))!= __('阅读更多>>')
         - })
 
 //- Archive Page
